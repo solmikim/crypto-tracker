@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactQueryDevtools } from 'react-query/devtools'; 
 import Router from './Router';
 import { createGlobalStyle } from "styled-components";
 
@@ -71,6 +71,7 @@ function App() {
     <>
       <GlobalStyle />
       <Router />
+      <ReactQueryDevtools initialIsOpen={true}/>
     </>
   )
 
